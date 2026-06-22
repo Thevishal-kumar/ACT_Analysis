@@ -343,7 +343,14 @@ export default function App() {
                           </div>
                         </div>
 
-                        <pre className="result-snippet" style={{ fontStyle: "normal" }}>{result.text}</pre>
+                        <div className="result-snippet" style={{ fontStyle: "normal", whiteSpace: "pre-wrap" }}>
+                          {result.text
+                            ? result.text
+                                .split(/\n{2,}/)
+                                .map((para) => para.replace(/\n/g, " ").replace(/\s+/g, " ").trim())
+                                .join("\n\n")
+                            : ""}
+                        </div>
                       </article>
                     );
                   })}
