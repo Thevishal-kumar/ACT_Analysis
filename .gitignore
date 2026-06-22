@@ -1,0 +1,31 @@
+# Root gitignore for ACT_Analysis
+
+# Python / Backend
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.venv/
+backend/venv/
+backend/env/
+backend/.env
+backend/*.pyc
+backend/*.pyo
+
+# Data & AI Models (Do not commit large datasets or vector stores)
+backend/data/
+backend/faiss_index/
+backend/uploaded_files/
+backend/supreme_court_judgments/
+backend/act_pdfs/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+*.log

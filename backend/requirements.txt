@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+transformers
+torch
+pymupdf
+python-multipart
+tqdm
+numpy
+faiss-cpu
+groq
+python-dotenv
