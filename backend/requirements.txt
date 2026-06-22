@@ -2,7 +2,7 @@
 fastapi
 uvicorn
 transformers
-torch==2.2.2+cpu
+torch==2.9.0+cpu
 pymupdf
 python-multipart
 tqdm
